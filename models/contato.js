@@ -18,10 +18,10 @@ const Contato = sequelize.define('Contato', {
   email: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true // Garante que cada e-mail seja único
+    unique: true 
   }
 }, {
-  timestamps: false // Desativa a criação automática de campos 'createdAt' e 'updatedAt'
+  timestamps: false 
 });
 
 module.exports = Contato;

@@ -1,6 +1,5 @@
 const Contato = require('../models/contato');
 
-// Renderiza a página principal com a lista de contatos
 exports.renderContatosPage = async (req, res) => {
   try {
     const contatos = await Contato.findAll();
@@ -13,7 +12,6 @@ exports.renderContatosPage = async (req, res) => {
   }
 };
 
-// Lógica para criar um novo contato (via formulário)
 exports.criarContato = async (req, res) => {
   try {
     const { nome, telefone, email } = req.body;
